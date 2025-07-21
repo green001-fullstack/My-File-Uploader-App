@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>HomePage</title>
+</head>
+<body>
+    <div class="add-file">
+        <a href="#" id="openModalBtn">ADD A FILE</a>
+    </div>
+
+    <!-- Modal Popup -->
+    <div id="modalOverlay" class="modal-overlay">
+        <div class="modal-content">
+            <div class="header">
+                <h5>UPLOAD FILES</h5>
+                <i class="fa-solid fa-xmark" id="closeModalBtn"></i>
+            </div>
+            
+            <div class="body-content" id="dropZone">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <h6>Drag files here or click Browse</h6>
+                <input type="file" id="fileInput" style="display:none;" name="file">
+                <div class="progress-container">
+                    <div class="progress-bar"></div>
+                    <span class="progress-text">0%</span>
+                </div>
+            </div>
+            
+            <a href="#" class="browse-btn" id="browseBtn">Browse</a>
+        </div>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+</html>
