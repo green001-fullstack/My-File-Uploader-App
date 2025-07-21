@@ -66,3 +66,8 @@ node server.js
 
 Just open the file directly or use a simple static server like Live Server in VS Code.
 
+## Notes
+Uploaded files are stored in the /uploads folder.
+Backend runs on http://localhost:3000.
+CORS is enabled to allow frontend/backend communication.
+
